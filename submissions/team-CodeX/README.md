@@ -5,7 +5,7 @@
 | **Name** | **Email** | **GitHub** |
 | --- | --- | --- |
 | Yazir Musthafa | YOUR_EMAIL | [Yazir-Musthafa](https://github.com/Yazir-Musthafa) |
-| MEMBER 2 | MEMBER 2 EMAIL | GITHUB |
+| Abhishek K V | abhishekkvthayineri@gmail.com | [ABHISHEK-KV-1010](https://github.com/ABHISHEK-KV-1010) |
 | MEMBER 3 | Gautham Sunil | https://github.com/zypson|
 | MEMBER 4 | MEMBER 4 EMAIL | GITHUB |
 
