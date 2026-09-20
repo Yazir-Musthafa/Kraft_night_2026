@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenEscalating"
+    style="@style/CherScreen">
+
+    <com.cher.watch.ui.widgets.RingView
+        android:id="@+id/ringEscalate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="32dp">
+
+        <TextView
+            style="@style/CherCaps"
+            android:text="Sending SOS in"
+            android:textColor="@color/cher_red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvEscalateCountdown"
+            style="@style/CherBig"
+            android:layout_marginTop="4dp"
+            android:text="10"
+            android:textColor="@color/cher_red"
+            android:textSize="74sp" />
+
+        <TextView
+            style="@style/CherLabel"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="Tap below if you are OK" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEscalateCancel"
+        style="@style/CherButton"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_button_green"
+        android:text="I'm OK · Cancel"
+        android:textColor="@color/cher_on_green"
+        android:textSize="12sp" />
+</FrameLayout>

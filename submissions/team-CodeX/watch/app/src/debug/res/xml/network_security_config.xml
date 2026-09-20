@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DEBUG ONLY: the emulator reaches the host backend over plain http://10.0.2.2:3000. Never ship this. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true"/>
+</network-security-config>

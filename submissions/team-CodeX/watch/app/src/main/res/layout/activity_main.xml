@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cher_bg">
+
+    <include layout="@layout/screen_main" />
+    <include layout="@layout/screen_checkin" />
+    <include layout="@layout/screen_escalating" />
+    <include layout="@layout/screen_emergency" />
+    <include layout="@layout/screen_response" />
+    <include layout="@layout/screen_closed" />
+    <include layout="@layout/screen_permission" />
+    <include layout="@layout/screen_settings" />
+    <include layout="@layout/screen_help_request" />
+    <include layout="@layout/screen_help_checkin" />
+    <include layout="@layout/screen_help_nav" />
+    <include layout="@layout/screen_call112" />
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CHER</string>
+    <string name="hold_for_sos">HOLD FOR SOS</string>
+    <string name="hold_hint">Hold the button to send SOS</string>
+    <string name="settings">SETTINGS</string>
+    <string name="are_you_ok">Are you OK?</string>
+    <string name="im_ok">I\'M OK</string>
+    <string name="need_help">NEED HELP</string>
+    <string name="cancel">CANCEL</string>
+    <string name="cancel_confirm">TAP AGAIN TO CANCEL</string>
+    <string name="im_safe">I\'M SAFE</string>
+    <string name="emergency_active">EMERGENCY ACTIVE</string>
+    <string name="back">BACK</string>
+    <string name="ok">OK</string>
+    <string name="grant">GRANT</string>
+    <string name="skip">NOT NOW</string>
+    <string name="disclaimer">CHER is a prototype. It reports unusual signals, never medical diagnoses.</string>
+</resources>

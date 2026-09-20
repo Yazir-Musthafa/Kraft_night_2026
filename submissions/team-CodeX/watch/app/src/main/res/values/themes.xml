@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.CHER" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowBackground">@color/cher_bg</item>
+        <item name="android:colorBackground">@color/cher_bg</item>
+        <item name="android:textColorPrimary">@color/cher_text</item>
+        <item name="android:textColorSecondary">@color/cher_text_dim</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Small letter-spaced caps caption -->
+    <style name="CherLabel">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/cher_text_dim</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CherCaps" parent="CherLabel">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.14</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CherTitle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/cher_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CherValue">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/cher_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CherBody">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/cher_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Big numbers: light weight reads as premium on black -->
+    <style name="CherBig">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/cher_text</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Pill button. Colour comes from the background drawable. -->
+    <style name="CherButton" parent="@android:style/Widget.DeviceDefault.Button">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textColor">@color/cher_text</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:background">@drawable/bg_button_ghost</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- Every screen fills the round display; content padding is set per screen. -->
+    <style name="CherScreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="CherScroll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+</resources>

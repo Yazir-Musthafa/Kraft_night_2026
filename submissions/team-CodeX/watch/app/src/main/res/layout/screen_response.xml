@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenResponse"
+    style="@style/CherScreen">
+
+    <com.cher.watch.ui.widgets.RingView
+        android:id="@+id/ringRs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="26dp">
+
+        <TextView
+            android:id="@+id/tvRsStatus"
+            style="@style/CherCaps"
+            android:background="@drawable/bg_chip_green"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="ON THE WAY"
+            android:textColor="@color/cher_green" />
+
+        <TextView
+            style="@style/CherLabel"
+            android:layout_marginTop="9dp"
+            android:text="HELP IS COMING"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/tvRsName"
+            style="@style/CherTitle"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Abhishek"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tvRsRole"
+            style="@style/CherLabel"
+            android:text="First Responder"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvRsNext"
+            style="@style/CherLabel"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="3"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvRsTracking"
+            style="@style/CherCaps"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/cher_green"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="22dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRsCoverage"
+            style="@style/CherCaps"
+            android:layout_marginRight="8dp"
+            android:text="75%"
+            android:textColor="@color/cher_text"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnRsSafe"
+            style="@style/CherButton"
+            android:layout_width="88dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_button_green"
+            android:text="@string/im_safe"
+            android:textColor="@color/cher_on_green"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnRsCancel"
+            style="@style/CherButton"
+            android:layout_width="82dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="0dp"
+            android:maxLines="1"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="@string/cancel"
+            android:textSize="10sp" />
+    </LinearLayout>
+</FrameLayout>

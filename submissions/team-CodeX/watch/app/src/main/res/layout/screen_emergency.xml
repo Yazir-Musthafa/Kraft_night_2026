@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenEmergency"
+    style="@style/CherScreen">
+
+    <com.cher.watch.ui.widgets.RingView
+        android:id="@+id/ringEm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.cher.watch.ui.widgets.PulseView
+        android:id="@+id/pulseEm"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="22dp">
+
+        <TextView
+            android:id="@+id/tvEmPriority"
+            style="@style/CherCaps"
+            android:background="@drawable/bg_chip_red"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="SOS ACTIVE"
+            android:textColor="@color/cher_red" />
+
+        <TextView
+            android:id="@+id/tvEmResponse"
+            style="@style/CherTitle"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="6dp"
+            android:maxLines="2"
+            android:text="Searching for responder..."
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvEmContact"
+            style="@style/CherLabel"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Calling..."
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_chip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:id="@+id/ivEmLocation"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_pin" />
+
+            <TextView
+                android:id="@+id/tvEmLocation"
+                style="@style/CherCaps"
+                android:layout_marginLeft="4dp"
+                android:text="LOCATION PENDING"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stepDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/tvEmNext"
+            style="@style/CherLabel"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="17dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEm112"
+            style="@style/CherButton"
+            android:layout_width="52dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_button_red"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:text="112"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnEmCancel"
+            style="@style/CherButton"
+            android:layout_width="92dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/cancel"
+            android:textSize="11sp" />
+    </LinearLayout>
+</FrameLayout>

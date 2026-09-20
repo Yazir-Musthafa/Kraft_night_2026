@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenHelpRequest"
+    style="@style/CherScreen">
+
+    <com.cher.watch.ui.widgets.RingView
+        android:id="@+id/ringHelp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.cher.watch.ui.widgets.PulseView
+        android:id="@+id/pulseHelp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="-22dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="86dp">
+
+        <TextView
+            android:id="@+id/tvHelpTitle"
+            style="@style/CherCaps"
+            android:text="Someone nearby needs help"
+            android:textColor="@color/cher_red"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvHelpDistance"
+            style="@style/CherBig"
+            android:layout_marginTop="2dp"
+            android:text="300 m"
+            android:textSize="44sp" />
+
+        <TextView
+            android:id="@+id/tvHelpDirection"
+            style="@style/CherCaps"
+            android:layout_marginTop="1dp"
+            android:text="SOUTH · 4 MIN WALK"
+            android:textColor="@color/cher_text"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvHelpError"
+            style="@style/CherLabel"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textColor="@color/cher_amber"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="22dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnHelpAccept"
+            style="@style/CherButton"
+            android:layout_width="102dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_button_green"
+            android:text="Can help"
+            android:textColor="@color/cher_on_green"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnHelpDecline"
+            style="@style/CherButton"
+            android:layout_width="62dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="0dp"
+            android:text="No"
+            android:textSize="12sp" />
+    </LinearLayout>
+</FrameLayout>

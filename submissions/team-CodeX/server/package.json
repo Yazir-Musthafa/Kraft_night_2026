@@ -1,0 +1,29 @@
+{
+  "name": "cher-server",
+  "version": "1.0.0",
+  "description": "CHER - Coordinated Human Emergency & Response: closed-loop emergency coordination backend",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "check": "node scripts/check-syntax.js",
+    "test": "node --test --test-concurrency=1 \"test/*.test.js\"",
+    "demo": "node scripts/demo.js",
+    "twilio:bins": "node scripts/twilio-bins.js"
+  },
+  "dependencies": {
+    "@openai/agents": "^0.18.0",
+    "dotenv": "^17.0.0",
+    "express": "^5.2.1",
+    "redis": "^6.2.1",
+    "socket.io": "^4.8.3",
+    "twilio": "^6.1.1",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.3"
+  }
+}

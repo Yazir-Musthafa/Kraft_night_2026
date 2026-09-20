@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenCheckIn"
+    style="@style/CherScreen">
+
+    <com.cher.watch.ui.widgets.RingView
+        android:id="@+id/ringCheckIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="28dp">
+
+        <TextView
+            style="@style/CherTitle"
+            android:text="@string/are_you_ok"
+            android:textColor="@color/cher_amber"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tvCheckInReason"
+            style="@style/CherLabel"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="Unusual signals detected" />
+
+        <TextView
+            android:id="@+id/tvCheckInCountdown"
+            style="@style/CherBig"
+            android:layout_marginTop="6dp"
+            android:text="30"
+            android:textSize="58sp" />
+
+        <TextView
+            style="@style/CherCaps"
+            android:text="seconds to answer"
+            android:textColor="@color/cher_text_dim"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOk"
+            style="@style/CherButton"
+            android:layout_width="94dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_button_green"
+            android:text="@string/im_ok"
+            android:textColor="@color/cher_on_green" />
+
+        <Button
+            android:id="@+id/btnNeedHelp"
+            style="@style/CherButton"
+            android:layout_width="76dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_button_red"
+            android:text="Help" />
+    </LinearLayout>
+</FrameLayout>

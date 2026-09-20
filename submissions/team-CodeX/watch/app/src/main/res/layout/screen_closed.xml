@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenClosed"
+    style="@style/CherScreen">
+
+    <com.cher.watch.ui.widgets.RingView
+        android:id="@+id/ringClosed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <FrameLayout
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_disc">
+
+            <ImageView
+                android:id="@+id/ivClosed"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_check" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvClosedTitle"
+            style="@style/CherTitle"
+            android:layout_marginTop="8dp"
+            android:text="RESOLVED"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvClosedBody"
+            style="@style/CherLabel"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:maxLines="4"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnClosedOk"
+        style="@style/CherButton"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_button_green"
+        android:text="@string/ok"
+        android:textColor="@color/cher_on_green" />
+</FrameLayout>

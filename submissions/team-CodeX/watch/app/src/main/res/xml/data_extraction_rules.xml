@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="cher_pending.xml"/>
+        <exclude domain="sharedpref" path="cher_active.xml"/>
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="cher_pending.xml"/>
+        <exclude domain="sharedpref" path="cher_active.xml"/>
+    </device-transfer>
+</data-extraction-rules>

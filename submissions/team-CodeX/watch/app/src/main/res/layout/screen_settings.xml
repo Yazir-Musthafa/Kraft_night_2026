@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenSettings"
+    style="@style/CherScreen">
+
+    <ScrollView style="@style/CherScroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="52dp"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:paddingTop="36dp">
+
+            <TextView style="@style/CherCaps" android:text="Settings" android:textColor="@color/cher_text" android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp">
+
+                <Switch android:id="@+id/swDemo" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="38dp" android:text="Demo mode" android:textSize="12sp" />
+                <Switch android:id="@+id/swSafe" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="38dp" android:text="Battery saver" android:textSize="12sp" />
+                <Switch android:id="@+id/swBroadcast" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="38dp" android:text="Nearby Responder Alerts" android:textSize="12sp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingBottom="4dp" android:text="On an SOS, nearby CHER watches are asked first. Off: contacts are called at once." android:textColor="@color/cher_text_dim" android:textSize="9sp" />
+            </LinearLayout>
+
+            <TextView style="@style/CherCaps" android:layout_marginTop="12dp" android:text="AI assistance" android:textColor="@color/cher_blue" android:textSize="9sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="8dp"
+                android:paddingTop="4dp">
+
+                <Switch android:id="@+id/swAi" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="38dp" android:text="AI Mode" android:textSize="12sp" />
+                <Switch android:id="@+id/swAiVoice" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="38dp" android:text="Voice guidance" android:textSize="12sp" />
+                <Switch android:id="@+id/swAiHealth" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="38dp" android:text="Health insights" android:textSize="12sp" />
+                <Switch android:id="@+id/swAiEmergency" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="38dp" android:text="Emergency guidance" android:textSize="12sp" />
+                <Switch android:id="@+id/sw112" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="38dp" android:text="Call 112 fallback" android:textSize="12sp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingBottom="4dp" android:text="Short suggestions, never a diagnosis. 112 is only called after YOU press SOS and nobody answers, with a cancel countdown, and never in demo mode." android:textColor="@color/cher_text_dim" android:textSize="9sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/demoControls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView style="@style/CherCaps" android:layout_marginTop="10dp" android:text="Simulated signals" android:textColor="@color/cher_amber" android:textSize="9sp" />
+                <Button android:id="@+id/btnDemoNormal" style="@style/CherButton" android:layout_height="36dp" android:text="Normal HR" android:textSize="11sp" />
+                <Button android:id="@+id/btnDemoElevate" style="@style/CherButton" android:layout_height="36dp" android:background="@drawable/bg_button_blue" android:text="Elevate HR (AI tip)" android:textSize="11sp" />
+                <Button android:id="@+id/btnDemoVeryHigh" style="@style/CherButton" android:layout_height="36dp" android:text="Very high HR (110+)" android:textSize="11sp" />
+                <Button android:id="@+id/btnDemoHigh" style="@style/CherButton" android:layout_height="36dp" android:text="High HR" android:textSize="11sp" />
+                <Button android:id="@+id/btnDemoLow" style="@style/CherButton" android:layout_height="36dp" android:text="Low HR" android:textSize="11sp" />
+                <Button android:id="@+id/btnDemoTrend" style="@style/CherButton" android:layout_height="36dp" android:text="HR trend up" android:textSize="11sp" />
+                <Button android:id="@+id/btnDemoImpact" style="@style/CherButton" android:layout_height="36dp" android:text="Sim impact" android:textSize="11sp" />
+                <Button android:id="@+id/btnDemoFall" style="@style/CherButton" android:layout_height="36dp" android:background="@drawable/bg_button_amber" android:text="Sim fall" android:textColor="@color/cher_on_amber" android:textSize="11sp" />
+                <Button android:id="@+id/btnDemoInactive" style="@style/CherButton" android:layout_height="36dp" android:text="Sim inactivity" android:textSize="11sp" />
+            </LinearLayout>
+
+            <TextView style="@style/CherCaps" android:layout_marginTop="12dp" android:text="Server" android:textSize="9sp" />
+            <TextView android:id="@+id/tvServer" style="@style/CherBody" android:layout_marginTop="2dp" android:textColor="@color/cher_text_dim" android:textSize="10sp" />
+
+            <TextView style="@style/CherCaps" android:layout_marginTop="10dp" android:text="Permissions" android:textSize="9sp" />
+            <TextView android:id="@+id/tvPerms" style="@style/CherBody" android:layout_marginTop="2dp" android:textColor="@color/cher_text_dim" android:textSize="10sp" />
+            <Button android:id="@+id/btnPerms" style="@style/CherButton" android:layout_height="36dp" android:text="Review permissions" android:textSize="11sp" />
+
+            <TextView style="@style/CherCaps" android:layout_marginTop="10dp" android:text="Sensors" android:textSize="9sp" />
+            <TextView android:id="@+id/tvCaps" style="@style/CherBody" android:layout_marginTop="2dp" android:textColor="@color/cher_text_dim" android:textSize="10sp" />
+            <TextView android:id="@+id/tvBg" style="@style/CherBody" android:layout_marginTop="2dp" android:textColor="@color/cher_text_dim" android:textSize="10sp" />
+
+            <TextView style="@style/CherLabel" android:layout_marginTop="10dp" android:gravity="center" android:text="@string/disclaimer" android:textSize="9sp" />
+
+            <Button android:id="@+id/btnSettingsBack" style="@style/CherButton" android:layout_marginTop="12dp" android:text="@string/back" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

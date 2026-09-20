@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenHelpNav"
+    style="@style/CherScreen">
+
+    <com.cher.watch.ui.widgets.RingView
+        android:id="@+id/ringNav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.cher.watch.ui.widgets.SwipePager
+        android:id="@+id/navPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Page 1: direction -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.cher.watch.ui.widgets.DirectionView
+                android:id="@+id/dirView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:id="@+id/tvNavDistance"
+                    style="@style/CherBig"
+                    android:text="--"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/tvNavSub"
+                    style="@style/CherCaps"
+                    android:layout_marginTop="1dp"
+                    android:text="LOCATING"
+                    android:textColor="@color/cher_text_dim"
+                    android:textSize="9.5sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Page 2: map -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.cher.watch.ui.widgets.MiniMapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tvMapDistance"
+                style="@style/CherCaps"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_chip"
+                android:paddingBottom="2dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:paddingTop="2dp"
+                android:text="--"
+                android:textColor="@color/cher_text"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvMapNote"
+                style="@style/CherLabel"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="27dp"
+                android:text="North up"
+                android:textSize="9sp" />
+        </FrameLayout>
+
+        <!-- Page 3: details + actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="26dp">
+
+            <TextView
+                android:id="@+id/tvNavStatus"
+                style="@style/CherCaps"
+                android:background="@drawable/bg_chip_blue"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp"
+                android:text="On the way"
+                android:textColor="@color/cher_blue" />
+
+            <TextView
+                android:id="@+id/tvNavPerson"
+                style="@style/CherTitle"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="7dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="the CHER user"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tvNavCoords"
+                style="@style/CherLabel"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginTop="1dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:gravity="center"
+                android:text="37.42200, -122.08400"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btnNavPrimary"
+                style="@style/CherButton"
+                android:layout_width="152dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_button_green"
+                android:text="I've arrived"
+                android:textColor="@color/cher_on_green"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnNavSecondary"
+                style="@style/CherButton"
+                android:layout_width="152dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_button_blue"
+                android:text="Person is safe"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnNavBackup"
+                style="@style/CherButton"
+                android:layout_width="152dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="4dp"
+                android:text="Need backup"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tvNavError"
+                style="@style/CherLabel"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:textColor="@color/cher_amber"
+                android:textSize="9sp" />
+        </LinearLayout>
+    </com.cher.watch.ui.widgets.SwipePager>
+</FrameLayout>

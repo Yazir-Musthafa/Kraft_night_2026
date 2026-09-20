@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenHelpCheckIn"
+    style="@style/CherScreen">
+
+    <com.cher.watch.ui.widgets.RingView
+        android:id="@+id/ringHelpCheckIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="28dp">
+
+        <TextView
+            android:id="@+id/tvHcTitle"
+            style="@style/CherTitle"
+            android:text="Still on your way?"
+            android:textColor="@color/cher_amber"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvHcCountdown"
+            style="@style/CherCaps"
+            android:layout_marginTop="1dp"
+            android:text="45 s"
+            android:textColor="@color/cher_text_dim"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnHcOn"
+            style="@style/CherButton"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_button_green"
+            android:text="Still coming"
+            android:textColor="@color/cher_on_green"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnHcArrived"
+            style="@style/CherButton"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_button_blue"
+            android:text="I've arrived"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnHcBackup"
+            style="@style/CherButton"
+            android:layout_width="150dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="5dp"
+            android:text="Need backup"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tvHcError"
+            style="@style/CherLabel"
+            android:gravity="center"
+            android:textColor="@color/cher_amber"
+            android:textSize="9sp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenCall112"
+    style="@style/CherScreen">
+
+    <com.cher.watch.ui.widgets.RingView
+        android:id="@+id/ringCall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/tvCallTitle"
+            style="@style/CherCaps"
+            android:text="Calling 112 in"
+            android:textColor="@color/cher_red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvCallCount"
+            style="@style/CherBig"
+            android:layout_marginTop="2dp"
+            android:text="10"
+            android:textColor="@color/cher_red"
+            android:textSize="66sp" />
+
+        <TextView
+            android:id="@+id/tvCallNote"
+            style="@style/CherLabel"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="No one has answered yet"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCallNow"
+            style="@style/CherButton"
+            android:layout_width="92dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_button_red"
+            android:maxLines="1"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="Call now"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnCallCancel"
+            style="@style/CherButton"
+            android:layout_width="80dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="0dp"
+            android:text="Cancel"
+            android:textSize="11sp" />
+    </LinearLayout>
+</FrameLayout>

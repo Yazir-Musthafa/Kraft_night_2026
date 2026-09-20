@@ -1,0 +1,30 @@
+// Test environment. Imported FIRST by every test file (config reads process.env at import time).
+const d = {
+  CHER_DEMO_MODE: 'true',
+  CHER_REDIS_PREFIX: 'cher-test',
+  EMERGENCY_CONTACT_1: '+15550000001',
+  EMERGENCY_CONTACT_1_NAME: 'Abhishek',
+  EMERGENCY_CONTACT_2: '+15550000002',
+  EMERGENCY_CONTACT_2_NAME: 'Priya',
+  EMERGENCY_CONTACT_3: '+15550000003',
+  EMERGENCY_CONTACT_3_NAME: 'Sam',
+  TWILIO_ACCOUNT_SID: 'ACtest',
+  TWILIO_AUTH_TOKEN: 'test-token',
+  TWILIO_PHONE_NUMBER: '+15559999999',
+  CHER_PUBLIC_URL: 'https://cher.test',
+  TWILIO_MAX_RETRIES: '3',
+  TWILIO_RETRY_INTERVAL_SECONDS: '5',
+  CHER_FOLLOWUP_INTERVAL_SECONDS: '10',
+  CHER_FOLLOWUP_MAX_RETRIES: '2',
+  LOG_LEVEL: 'error',
+  OPENAI_API_KEY: '',
+  // Anything a developer's real .env might set must not leak into tests (dotenv never overrides defined vars).
+  TWILIO_TWIML_BIN_INITIAL: '',
+  TWILIO_TWIML_BIN_FOLLOWUP_STATUS: '',
+  TWILIO_TWIML_BIN_FOLLOWUP_CONFIRM: '',
+  CHER_TWILIO_SIMULATE: 'false',
+  CHER_API_KEY: '',
+  CHER_LOCATION_URL_TEMPLATE: '',
+  CHER_REUSE_SINGLE_CONTACT: '',
+};
+for (const [k, v] of Object.entries(d)) if (process.env[k] === undefined || k === 'OPENAI_API_KEY') process.env[k] = v;

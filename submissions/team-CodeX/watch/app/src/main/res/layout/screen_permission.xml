@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenPermission"
+    style="@style/CherScreen">
+
+    <com.cher.watch.ui.widgets.RingView
+        android:id="@+id/ringPerm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/tvPermTitle"
+            style="@style/CherTitle"
+            android:text="Location"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvPermWhy"
+            style="@style/CherLabel"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="@color/cher_text"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="28dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPermGrant"
+            style="@style/CherButton"
+            android:layout_width="82dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bg_button_blue"
+            android:text="@string/grant"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnPermSkip"
+            style="@style/CherButton"
+            android:layout_width="78dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/skip"
+            android:textSize="11sp" />
+    </LinearLayout>
+</FrameLayout>

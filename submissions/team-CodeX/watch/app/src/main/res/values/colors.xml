@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- OLED-black canvas, layered dark surfaces -->
+    <color name="cher_bg">#000000</color>
+    <color name="cher_surface">#12151C</color>
+    <color name="cher_surface_hi">#1C212D</color>
+    <color name="cher_stroke">#2A3143</color>
+    <!-- text -->
+    <color name="cher_text">#F4F6FA</color>
+    <color name="cher_text_dim">#8E97AB</color>
+    <color name="cher_text_faint">#5B6479</color>
+    <!-- signal colours -->
+    <color name="cher_red">#FF453A</color>
+    <color name="cher_red_dark">#C62A20</color>
+    <color name="cher_green">#32D74B</color>
+    <color name="cher_green_dark">#1E9E38</color>
+    <color name="cher_amber">#FFB020</color>
+    <color name="cher_blue">#4DA3FF</color>
+    <color name="cher_blue_dark">#2C6BD1</color>
+    <!-- text on filled pills -->
+    <color name="cher_on_green">#04210C</color>
+    <color name="cher_on_amber">#261900</color>
+</resources>
